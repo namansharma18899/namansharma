@@ -1,0 +1,2 @@
+require("naman")
+print("hello")
