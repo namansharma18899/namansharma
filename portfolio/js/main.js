@@ -17,6 +17,15 @@
   });
 
 
+  var halfHeight = function(){
+		$('.js-halfheight').css('height',Math.round($(window).height()));
+		$(window).resize(function(){
+			$('.js-halfheight').css('height', $(window).height());
+		});
+
+  };
+  halfHeight();
+
 	var fullHeight = function() {
 
 		$('.js-fullheight').css('height', $(window).height());
